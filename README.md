@@ -43,8 +43,6 @@ If the database crashes for 1 hour:
    1. We violate the SLO (99.9%). The engineering team stops feature work to fix the database.
    2. We stay within the SLA (99.5%). Because we had a "buffer," the business doesn't have to pay out refunds or penalties to customers.
 
-------------------------------
-
 
    1. Customer Satisfaction: Ensures the system is reliable when users need it most.
    2. Cost Control: Prevents over-engineering for 100% uptime, which is expensive and unnecessary.
