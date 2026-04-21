@@ -49,5 +49,54 @@ If the database crashes for 1 hour:
    3. Operational Efficiency: Provides a clear "Go/No-Go" signal for deployments based on real data.
 
 ------------------------------
-Would you like to add a "Contact" or "Tools" section (like Prometheus/Grafana) to the end?
+Additional Content:
+# Service Level Management: SLIs, SLOs, and SLAs
+
+This guide outlines the definitions and importance of SLIs, SLOs, and SLAs within Site Reliability Engineering (SRE) and service management.
+
+## 📋 Definitions
+
+### 1. SLI (Service Level Indicator)
+*   **What it is:** The actual measurement of a service's performance.
+*   **Key Question:** "What is the current status?"
+*   **Examples:** 
+    *   **Latency:** Time taken to process a request.
+    *   **Availability:** Percentage of time the service is reachable.
+    *   **Error Rate:** Ratio of failed requests to total requests.
+
+### 2. SLO (Service Level Objective)
+*   **What it is:** The internal target or goal for an SLI over a specific period.
+*   **Key Question:** "How good should the service be?"
+*   **Target:** Usually expressed as a percentage over time (e.g., 99.9% uptime per month).
+*   **Purpose:** Helps teams balance innovation (features) with reliability.
+
+### 3. SLA (Service Level Agreement)
+*   **What it is:** A legal or formal contract between a provider and an end-user.
+*   **Key Question:** "What happens if we fail to meet our targets?"
+*   **Contents:** Includes the SLO targets and the financial or service penalties if they are missed.
+
+---
+
+## ⚖️ Quick Comparison
+
+
+| Feature | SLI | SLO | SLA |
+| :--- | :--- | :--- | :--- |
+| **Nature** | Metric | Goal | Contract |
+| **Audience** | Engineers | Engineers/PMs | Customers/Legal |
+| **Focus** | Measurement | Reliability | Accountability |
+| **Penalty** | None | Alert/Process Change | Financial/Legal |
+
+---
+
+## 🚀 Why They Matter
+
+1. **Alignment:** Ensures business and engineering teams agree on what "reliable" means.
+2. **Error Budgets:** If you exceed your SLO, the team shifts focus from new features to system stability.
+3. **Customer Trust:** Provides transparent expectations to users about service quality.
+4. **Prioritization:** Data-driven metrics help decide where to invest engineering efforts.
+
+---
+*Created for internal documentation and SRE best practices.*
+
 
